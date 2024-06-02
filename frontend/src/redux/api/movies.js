@@ -6,6 +6,7 @@ export const moviesApiSlice = apiSlice.injectEndpoints({
     getAllMovies: builder.query({
       query: () => `${MOVIE_URL}/all-movies`,
     }),
+    
     createMovie: builder.mutation({
       query: (newMovie) => ({
         url: `${MOVIE_URL}/create-movie`,
